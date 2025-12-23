@@ -3,7 +3,7 @@ import {Chatbot} from 'supersimpledev'
 import LoadingSpinnerImage from '../assets/loading-spinner.gif'
 import './ChatInput.css'
 
-export function ChatInput({chatMessages, setChatMessages}) {
+function ChatInput({chatMessages, setChatMessages}) {
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   
@@ -83,3 +83,5 @@ export function ChatInput({chatMessages, setChatMessages}) {
     </div>
   );
 }
+
+export default ChatInput;
